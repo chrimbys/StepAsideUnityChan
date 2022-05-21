@@ -129,12 +129,15 @@ public class ItemGenerator : MonoBehaviour
 
 
         //unityちゃんの位置を取得し、start
-        if ((Unitychan.transform.position.z > startPos) && (Unitychan.transform.position.z < goalPos))
+        if ((Unitychan.transform.position.z > firstPos) && (Unitychan.transform.position.z < goalPos))
         {
+            if(Unitychan.transform.position.z % 15 == 0)
+            {
+                Item();
+
+            }
 
 
-
-            Item();
 
 
 
